@@ -17,6 +17,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .image-wrapper {
@@ -35,7 +36,6 @@
 .image-text {
     position: absolute;
     top: 40%;
-    right: 0;
     text-align: center;
     padding: 5px;
     color: #c69d46;
@@ -113,6 +113,8 @@
     .container {
         height: 70vh;
     }
+    .rectangular-div {
+        margin-top: 15vh;}
 
     .rectangular-div {
         flex-direction: column; /* Stack items vertically */
