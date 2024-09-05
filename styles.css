@@ -308,7 +308,7 @@ body {
     width: 100%;
     position: relative;
   }
-
+  
   .content-box {
     position: absolute;
     bottom: -160px; /* Overflow by 160px below the top section */
@@ -327,17 +327,17 @@ body {
 
   .content-box h3 {
     font-size: 24px;
-    color: #333;
+    color: #c69d46
   }
 
   .content-box h1 {
     font-size: 28px;
-    color: #333;
+    color: #c69d46;
   }
 
   .content-box h2 {
     font-size: 18px;
-    color: #777;
+    color: #c69d46;
     margin-top: 10px;
   }
 
@@ -352,6 +352,7 @@ body {
   }
 
   .card {
+    color: #c69d46;
     background-color: white;
     padding: 20px;
     width: 200px;
@@ -366,13 +367,11 @@ body {
 
   .card h3 {
     font-size: 18px;
-    color: #333;
     margin-bottom: 10px;
   }
 
   .card p {
     font-size: 14px;
-    color: #777;
   }
 
   /* Responsive Design */
