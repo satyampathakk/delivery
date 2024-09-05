@@ -290,3 +290,139 @@ body {
     }
 }
 
+
+
+.third_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .top-section {
+    background-image: url('Page3_img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 100%;
+    position: relative;
+  }
+
+  .content-box {
+    position: absolute;
+    bottom: -160px; /* Overflow by 160px below the top section */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 450px;
+    height: 300px;
+    background-color: white;
+    border-radius: 225px 225px 0 0; /* Larger semi-circle */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-box h3 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .content-box h1 {
+    font-size: 28px;
+    color: #333;
+  }
+
+  .content-box h2 {
+    font-size: 18px;
+    color: #777;
+    margin-top: 10px;
+  }
+
+  .bottom-section {
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
+    padding: 50px 150px;
+    background-color: white;
+  }
+
+  .card {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+  }
+
+  .card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 14px;
+    color: #777;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-box {
+      width: 350px;
+      height: 250px;
+      border-radius: 175px 175px 0 0; /* Adjust semi-circle for smaller screens */
+    }
+
+    .content-box h3 {
+      font-size: 20px;
+    }
+
+    .content-box h1 {
+      font-size: 22px;
+    }
+
+    .bottom-section {
+      padding: 30px 50px;
+    }
+
+    .card {
+      width: 150px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content-box {
+      width: 300px;
+      height: 220px;
+      border-radius: 150px 150px 0 0; /* Adjust semi-circle further for mobile */
+    }
+
+    .content-box h3 {
+      font-size: 18px;
+    }
+
+    .content-box h1 {
+      font-size: 20px;
+    }
+
+    .bottom-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 20px;
+    }
+
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
