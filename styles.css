@@ -137,11 +137,16 @@ body {
     .intro-content {
         flex-direction: column;
         text-align: center;
+        
     }
+    .text-section{
+        padding-right: 8px;
 
+    }
     .text-section, .image-section {
         flex: none;
         width: 100%;
+        
     }
 
     .text-section h2 {
@@ -176,7 +181,8 @@ body {
     }
 
     .image-section img {
-        width: 90%;
+        width: 100%;
+
     }
 }
   
@@ -426,3 +432,45 @@ body {
       margin-bottom: 20px;
     }
   }
+/*some nav files*/
+
+.btn-get-in-touch {
+    color: #fff;
+    background-color: #f15b40;
+    border-color: #f15b40;
+}
+
+.btn-get-in-touch:hover {
+    background-color: #e04530;
+    border-color: #e04530;
+}
+
+/* Center logo adjustments */
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+        /* Adjust the navbar width for better spacing */
+        .navbar-nav {
+            gap: 40px; /* Less space between items */
+        }
+
+        /* Custom width control for left and right side */
+        .navbar-collapse {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 70px; /* Adjust this value for finer control */
+            padding-right: 70px; /* Adjust this value for finer control */
+        }
