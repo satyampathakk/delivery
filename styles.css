@@ -317,7 +317,7 @@ body {
   
   .content-box {
     position: absolute;
-    bottom: -160px; /* Overflow by 160px below the top section */
+    bottom: -90px; /* Overflow by 160px below the top section */
     left: 50%;
     transform: translateX(-50%);
     width: 450px;
