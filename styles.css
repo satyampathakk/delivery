@@ -191,12 +191,15 @@ body {
     padding: 80px 0;
     background-color: #f9f9f9;
 }
-
+.row{
+    max-width: 100%;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
+    ;
 }
 
 .section-title {
@@ -273,6 +276,8 @@ body {
 
 
 @media screen and (max-width: 993px) {
+
+
     .content-wrapper {
         flex-direction: column; /* Stack image and text blocks vertically */
         align-items: center; /* Center all blocks */
@@ -352,12 +357,12 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
-    padding: 50px 150px;
+    /* flex-wrap: wrap;  */
+    padding: 5%;
     background-color: white;
   }
 
-  .card {
+  .card-third {
     color: #c69d46;
     background-color: white;
     padding: 20px;
@@ -365,18 +370,18 @@ body {
     text-align: center;
   }
 
-  .card img {
-    width: 50px;
-    height: 50px;
+  .card-third img {
+    width: 150px;
+    height: 150px;
     margin-bottom: 15px;
   }
 
-  .card h3 {
+  .card-third h3 {
     font-size: 18px;
     margin-bottom: 10px;
   }
 
-  .card p {
+  .card-third p {
     font-size: 14px;
   }
 
@@ -400,7 +405,7 @@ body {
       padding: 30px 50px;
     }
 
-    .card {
+    .card-third {
       width: 150px;
     }
   }
@@ -424,10 +429,10 @@ body {
     .bottom-section {
       flex-direction: column;
       align-items: center;
-      padding: 20px 20px;
+      /* padding: 20px 20px; */
     }
 
-    .card {
+    .card-third {
       width: 100%;
       margin-bottom: 20px;
     }
@@ -473,4 +478,27 @@ body {
             justify-content: space-between;
             padding-left: 70px; /* Adjust this value for finer control */
             padding-right: 70px; /* Adjust this value for finer control */
+        }
+
+
+
+        @media screen and (max-width: 768px) {
+            .container {
+                height: auto;
+                flex-direction: column;
+                padding: 20px;
+            }
+        }
+        @media screen and (max-width: 993px) {
+            .container {
+                height: auto;
+                flex-direction: column;
+                padding: 20px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            .container {
+                height: auto;
+            }
         }

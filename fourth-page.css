@@ -7,7 +7,7 @@
     color: #c69d46;
     display: flex;
     justify-content: center;
-    height: 75vh;
+    /* height: 75vh; */
     padding: 0 20px; /* Add padding for smaller screens */
 }
 
@@ -37,7 +37,6 @@
 
 .image-text {
     position: absolute;
-    top: 40%;
     text-align: center;
     padding: 5px;
     color: #c69d46;
@@ -272,7 +271,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 150px;
+    padding: 0 ;
     box-sizing: border-box;
 }
 
@@ -340,44 +339,67 @@ button:hover {
 
 
 
-/* footer css */
-footer {
-    background-color: #343a40; /* Dark background */
-    padding: 10px 0; /* Padding for space around the content */
-    color: rgb(223, 8, 8); /* Text color */
-}
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 
-.footer-logo img {
-    max-width: 150px; /* Restrict logo width */
-    height: auto;
-    margin-bottom: 15px; /* Space between logo and text */
-}
 
-.footer-text p {
-    margin: 5px 0;
-}
+@media screen and (max-width: 768px) {
+    .content-box-fifth {
+        /* position: absolute;
+        bottom: -120px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        height: 250px;
+        background-color: white;
+        border-radius: 225px 225px 0 0;
+        padding: 20px; */
 
-@media (min-width: 768px) {
-    .footer-content {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
+        bottom: -30px;
+        width: 300px;
+        height: 150px;
+        border-radius: 350px 350px 0 0;
     }
 
-    .footer-logo {
-        flex: 1;
-    }
 
-    .footer-text {
-        flex: 1;
+
+
+    .custom-partition-fifth {
+        flex-direction: column;
+        height: auto;
     }
 }
 
+
+@media (max-width: 480px) {
+    .content-box {
+        bottom: -30px;
+        width: 300px;
+        height: 150px;
+        border-radius: 350px 350px 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-box h1 {
+        font-size: 20px;
+        position: absolute;
+        bottom: -10%;
+    }
+    .content-box h3 {
+        font-size: 18px;
+        position: absolute;
+        bottom: 30%;
+    }
+
+
+
+    .custom-partition-fifth {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+
+.text-container-fifth{
+    padding: 0 40px;
+}
