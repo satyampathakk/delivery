@@ -502,3 +502,13 @@ body {
                 height: auto;
             }
         }
+        .top-section-fi{
+            background-image: url(image/2.png);
+
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            position:inherit;
+            margin-top: 50px;
+        }
